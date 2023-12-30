@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        .catalog {
+            list-style: none;
+            padding:0;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .catalog-item {
+            width: 200px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul class="catalog">
+        <li class="catalog-item">
+            <h3>Geyser-Repair</h3>
+            <p>Prices may vary  based on technician's diagnosis</p>
+            <p>Rs 900.00</p>
+            <input type="submit" value="Add to Cart">
+        </li>
+        <li class="catalog-item">
+            <h3>Geyser-Fitting</h3>
+            <p>Number of Geyser's:
+                <input type="text" placeholder="ex: 1">
+            </p>
+            <p>Rs 700.00</p>
+            <input type="submit" value="Add to Cart">
+        </li>
+    </ul>
+</body>
+</html>
